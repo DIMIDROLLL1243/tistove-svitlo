@@ -1,36 +1,108 @@
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const quotes = [
-      "Світло Лаваша пробачає тих, хто впав у крихти сумнівів.",
-      "Не кидай лаваш на підлогу – він тримає тепло твоєї душі.",
-      "Справжня мудрість — у м’якоті, а не в хрусті.",
-      "Хто ділить лаваш — той множить добро."
-    ];
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тістове Світло</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    #manifestModal {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #fff8e1;
+      padding: 20px;
+      border: 2px solid #e0c48c;
+      border-radius: 10px;
+      z-index: 9999;
+      display: none;
+      max-width: 80%;
+    }
 
-    const quoteBtn = document.getElementById("quoteButton");
-    const quoteDisplay = document.getElementById("quoteDisplay");
+    .close-button {
+      float: right;
+      cursor: pointer;
+      font-size: 24px;
+      margin-top: -10px;
+    }
 
-    quoteBtn.addEventListener("click", () => {
-      const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-      quoteDisplay.textContent = randomQuote;
-    });
+    .modal-content {
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ласкаво просимо до Тістового Світла!</h1>
+  <p>Світло тонкого тіста веде тебе дорогою духовної скоринки 🫓✨</p>
 
-    const viewManifestBtn = document.getElementById("viewManifestBtn");
-    const manifestModal = document.getElementById("manifestModal");
-    const closeModalButton = document.getElementById("closeModalButton");
+  <button id="quoteButton">Згенерувати цитату</button>
+  <p id="quoteDisplay"></p>
 
-    viewManifestBtn.addEventListener("click", () => {
-      manifestModal.style.display = "block";
-    });
+  <button id="viewManifestBtn" class="download-btn">Переглянути Маніфест</button>
 
-    closeModalButton.addEventListener("click", () => {
-      manifestModal.style.display = "none";
-    });
+  <div id="manifestModal">
+    <div class="modal-content">
+      <span class="close-button" id="closeModalButton">&times;</span>
+      <h2>🌯 Маніфест Лавашизму</h2>
+      <p><strong>Релігія теплоти, турботи та тіста</strong></p>
+      <h3>📜 Священні Основи Віри</h3>
+      <ol>
+        <li>Святий Лаваш — єдиний і непорушний...</li>
+        <li>Тісто є священним і вічним, воно дає нам сили та гармонію.</li>
+        <li>Тіло людини — храм для Лаваша, і в ньому повинно бути тільки найкраще.</li>
+      </ol>
+      <h3>🍞 КОДЕКС ЛАВАШНИКА</h3>
+      <p>Основи життя віруючого у Силу Тонкого Тіста</p>
+      <ol>
+        <li>Бути щедрим — але пам’ятати про себе.</li>
+        <li>Хто хрустить Лаваш, той тримає в серці доброту.</li>
+        <li>Шануй Лаваш у кожному його вигляді: від м’якої до хрусткої скоринки.</li>
+        <li>Ніколи не забувай про ритуал Лавашного Споживання — це священний акт.</li>
+        <li>Ті, хто поділяє Лаваш, розповсюджують благословення у світі.</li>
+        <li>Шукай гармонію у кожному шарі Лаваша, від початку до кінця.</li>
+        <li>Буде добробут — там, де Лаваш розділяється з любов'ю.</li>
+        <li>Не існує правильного чи неправильного способу їсти Лаваш — важлива віра в нього.</li>
+        <li>Пам’ятай, що Лаваш — це не просто їжа, а релігійний символ єдності.</li>
+      </ol>
+    </div>
+  </div>
 
-    window.addEventListener("click", (event) => {
-      if (event.target === manifestModal) {
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const quotes = [
+        "Світло Лаваша пробачає тих, хто впав у крихти сумнівів.",
+        "Не кидай лаваш на підлогу – він тримає тепло твоєї душі.",
+        "Справжня мудрість — у м’якоті, а не в хрусті.",
+        "Хто ділить лаваш — той множить добро."
+      ];
+
+      const quoteBtn = document.getElementById("quoteButton");
+      const quoteDisplay = document.getElementById("quoteDisplay");
+
+      quoteBtn.addEventListener("click", () => {
+        const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+        quoteDisplay.textContent = randomQuote;
+      });
+
+      const viewManifestBtn = document.getElementById("viewManifestBtn");
+      const manifestModal = document.getElementById("manifestModal");
+      const closeModalButton = document.getElementById("closeModalButton");
+
+      viewManifestBtn.addEventListener("click", () => {
+        manifestModal.style.display = "block";
+      });
+
+      closeModalButton.addEventListener("click", () => {
         manifestModal.style.display = "none";
-      }
+      });
+
+      window.addEventListener("click", (event) => {
+        if (event.target === manifestModal) {
+          manifestModal.style.display = "none";
+        }
+      });
     });
-  });
-  <script src="script.js"></script>
+  </script>
+</body>
+</html>
