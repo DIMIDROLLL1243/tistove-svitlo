@@ -65,17 +65,18 @@ button:hover {
   padding-top: 60px;
 }
 
+
 .modal-content {
   background-color: #fefefe;
   margin: 5% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* ширина модального вікна */
+  width: 80%;
   max-width: 800px;
-  color: #000; /* Текст чорного кольору для контрасту */
+  color: #000;
   font-family: 'Spectral SC', serif;
-  max-height: 80vh; /* Максимальна висота модального вікна */
-  overflow-y: auto; /* Додає вертикальну прокрутку */
+  max-height: 70vh; /* Обмежує висоту */
+  overflow-y: auto; /* Додає прокручування */
 }
 
 /* Кнопка для закриття */
