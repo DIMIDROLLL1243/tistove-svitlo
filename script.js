@@ -1,23 +1,25 @@
-// Генератор "лавашних" цитат
-const quotes = [
-  "Лаваш — це любов, яку ти відчуваєш кожен раз, коли відламлюєш шматочок.",
-  "В кожному шматочку лавашу прихований сенс життя.",
-  "Тісто — основа всього, а лаваш — його кульмінація.",
-  "Якщо ти не любиш лаваш, ти не розумієш справжню духовність.",
-];
-
 document.getElementById('quoteButton').addEventListener('click', function() {
+  const quotes = [
+    '“Лаваш у руці — щастя в душі.”',
+    '“Піклуйся про лаваш — і лаваш подбає про тебе.”',
+    '“Сльоза падає в лаваш — і він приймає її як соус.”',
+    '“І побачив він, що це смачно. І сказав: нехай буде ще.”',
+  ];
+
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
   document.getElementById('quoteDisplay').textContent = randomQuote;
 });
 
-// Завантаження маніфесту у PDF
-document.getElementById('downloadBtn').addEventListener('click', function() {
-  const { jsPDF } = window.jspdf;
-  const doc = new jsPDF();
-
-  doc.text("Маніфест Тістового Світла", 20, 30);
-  doc.text("Тісто — це наш шлях. Лаваш — наша віра.", 20, 40);
-  
-  doc.save("manifest.pdf");
+document.getElementById('viewManifestBtn').addEventListener('click', function() {
+  document.getElementById('manifestModal').style.display = "block";
 });
+
+document.getElementById('closeModalButton').addEventListener('click', function() {
+  document.getElementById('manifestModal').style.display = "none";
+});
+
+window.onclick = function(event) {
+  if (event.target == document.getElementById('manifestModal')) {
+    document.getElementById('manifestModal').style.display = "none";
+  }
+};
