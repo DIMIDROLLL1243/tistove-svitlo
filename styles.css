@@ -1,0 +1,53 @@
+/* styles.css */
+
+/* Підключення шрифтів */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:wght@400&display=swap');
+
+/* Загальні стилі */
+body {
+  font-family: 'Spectral SC', serif;
+  background-color: #f4f4f4; /* світло-сірий фон */
+  color: #2e2e2e; /* темно-сірий текст */
+  margin: 0;
+  padding: 0;
+}
+
+/* Стиль для заголовка */
+h1 {
+  font-family: 'Cinzel', serif; /* шрифт для заголовка */
+  font-size: 48px;
+  text-align: center;
+  margin-top: 50px;
+  color: #4d2a1f; /* темно-червоний відтінок */
+  letter-spacing: 3px; /* трохи розширені літери */
+  text-transform: uppercase; /* великі літери */
+}
+
+/* Стиль для параграфів */
+p {
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Spectral SC', serif;
+}
+
+/* Стиль для кнопки */
+button {
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
+  background-color: #4d2a1f;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+button:hover {
+  background-color: #7a4b36; /* більш світлий відтінок при наведенні */
+}
