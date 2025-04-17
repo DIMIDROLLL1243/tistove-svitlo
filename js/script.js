@@ -31,4 +31,25 @@ document.addEventListener('DOMContentLoaded', function () {
       manifestModal.style.display = "none";
     }
   });
+
+  // Функція для переміщення модального вікна
+  let isDragging = false;
+  let offsetX, offsetY;
+
+  manifestModal.addEventListener("mousedown", function(e) {
+    isDragging = true;
+    offsetX = e.clientX - manifestModal.getBoundingClientRect().left;
+    offsetY = e.clientY - manifestModal.getBoundingClientRect().top;
+  });
+
+  window.addEventListener("mousemove", function(e) {
+    if (isDragging) {
+      manifestModal.style.left = e.clientX - offsetX + "px";
+      manifestModal.style.top = e.clientY - offsetY + "px";
+    }
+  });
+
+  window.addEventListener("mouseup", function() {
+    isDragging = false;
+  });
 });
