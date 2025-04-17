@@ -1,77 +1,49 @@
 /* Загальні стилі */
 body {
   background-image: url('https://raw.githubusercontent.com/DIMIDROLLL1243/tistove-svitlo/main/photo_2025-04-17_14-00-47.jpg');
-  background-size: cover; /* Зображення займає весь екран */
-  background-position: center center; /* Центруємо зображення */
-  background-repeat: no-repeat; /* Запобігаємо повторенню зображення */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   margin: 0;
   font-family: 'Spectral SC', serif;
   padding: 0;
-  overflow-x: hidden; /* щоб не було горизонтального скролінгу */
-  min-height: 100vh; /* Забезпечує мінімальну висоту сторінки на весь екран */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  color: white; /* Білий колір тексту для контрасту */
 }
-
 
 /* Стиль для заголовка */
 h1 {
-  font-family: 'Cinzel', serif;
-  font-size: 36px;
+  font-family: 'Cinzel', serif; /* шрифт для заголовка */
+  font-size: 48px;
   text-align: center;
-  margin-top: 20px;
-  color: #4d2a1f;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  margin-top: 50px;
+  color: #4d2a1f; /* темно-червоний відтінок */
+  letter-spacing: 3px; /* трохи розширені літери */
+  text-transform: uppercase; /* великі літери */
 }
 
 /* Стиль для параграфів */
 p {
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   line-height: 1.6;
   padding: 20px;
-  max-width: 900px;
-  margin: 20px auto;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Spectral SC', serif;
 }
 
-/* Стиль для кнопок */
+/* Стиль для кнопки */
 button {
   font-family: 'Cinzel', serif;
   font-size: 18px;
   background-color: #4d2a1f;
   color: #fff;
   border: none;
-  padding: 12px 25px;
+  padding: 15px 30px;
   cursor: pointer;
   border-radius: 5px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 button:hover {
-  background-color: #7a4b36;
+  background-color: #7a4b36; /* більш світлий відтінок при наведенні */
 }
-
-/* Стиль для модального вікна */
-.modal-content {
-  padding: 40px;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 10px;
-  max-width: 80%;
-  margin: auto;
-  overflow-y: auto;
-}
-
-/* Стиль для модального вікна при відкритті */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.6);
