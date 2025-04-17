@@ -1,15 +1,10 @@
-/* Підключення шрифтів */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:wght@400&display=swap');
-
 /* Загальні стилі */
 body {
   background-image: url('https://raw.githubusercontent.com/DIMIDROLLL1243/tistove-svitlo/main/photo_2025-04-17_14-00-47.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 100vh;  /* забезпечує, щоб фон покривав весь екран */
-  margin: 0;  /* щоб не було відступів */
+  color: #f0f0f0; /* Білий текст для контрасту */
 }
 
 /* Стиль для заголовка */
@@ -32,6 +27,9 @@ p {
   max-width: 800px;
   margin: 0 auto;
   font-family: 'Spectral SC', serif;
+  color: #f0f0f0; /* Білий текст */
+  background-color: rgba(0, 0, 0, 0.5); /* Напівпрозорий чорний фон */
+  border-radius: 10px; /* Краї округлені */
 }
 
 /* Стиль для кнопки */
@@ -50,4 +48,3 @@ button {
 button:hover {
   background-color: #7a4b36; /* більш світлий відтінок при наведенні */
 }
-
