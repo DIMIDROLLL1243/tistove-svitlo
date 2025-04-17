@@ -112,3 +112,13 @@ button:hover {
   background-color: #e8b49e;
   color: #fff;
 }
+  /* Ваші інші стилі */
+
+/* Стиль для модального вікна */
+#manifestModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
