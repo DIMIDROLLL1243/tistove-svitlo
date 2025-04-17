@@ -6,15 +6,12 @@
 
 /* Загальні стилі */
 body {
-  font-family: 'Spectral SC', serif;
-  color: #2e2e2e; /* темно-сірий текст */
-  margin: 0;
-  padding: 0;
   background-image: url('https://raw.githubusercontent.com/DIMIDROLLL1243/tistove-svitlo/main/photo_2025-04-17_14-00-47.jpg');
-  background-size: cover; /* Щоб зображення покривало весь екран */
-  background-position: center center; /* Центруємо зображення */
-  background-repeat: no-repeat; /* Щоб зображення не повторювалося */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
+
 
 /* Стиль для заголовка */
 h1 {
