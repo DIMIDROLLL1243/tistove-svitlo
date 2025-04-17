@@ -1,33 +1,35 @@
-// Масив цитат
-const quotes = [
-  '“Лаваш у руці — щастя в душі.”',
-  '“Піклуйся про лаваш — і лаваш подбає про тебе.”',
-  '“Сльоза падає в лаваш — і він приймає її як соус.”',
-  '“І побачив він, що це смачно. І сказав: нехай буде ще.”',
-];
+document.addEventListener('DOMContentLoaded', function () {
+  const quotes = [
+    "Світло Лаваша пробачає тих, хто впав у крихти сумнівів.",
+    "Не кидай лаваш на підлогу – він тримає тепло твоєї душі.",
+    "Справжня мудрість — у м’якоті, а не в хрусті.",
+    "Хто ділить лаваш — той множить добро."
+  ];
 
-// Додавання події на кнопку для генерації цитати
-document.getElementById('quoteButton').addEventListener('click', function() {
-  // Вибір випадкової цитати з масиву
-  const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-  
-  // Виведення цитати на сторінку
-  document.getElementById('quoteDisplay').textContent = randomQuote;
+  const quoteBtn = document.getElementById("quoteButton");
+  const quoteDisplay = document.getElementById("quoteDisplay");
+
+  quoteBtn.addEventListener("click", () => {
+    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+    quoteDisplay.textContent = randomQuote;
+  });
+
+  const viewManifestBtn = document.getElementById("viewManifestBtn");
+  const manifestModal = document.getElementById("manifestModal");
+  const closeModalButton = document.getElementById("closeModalButton");
+
+  viewManifestBtn.addEventListener("click", () => {
+    manifestModal.style.display = "block";
+  });
+
+  closeModalButton.addEventListener("click", () => {
+    manifestModal.style.display = "none";
+  });
+
+  window.addEventListener("click", (event) => {
+    if (event.target === manifestModal) {
+      manifestModal.style.display = "none";
+    }
+  });
 });
 
-// Подія для кнопки перегляду Маніфесту
-document.getElementById('viewManifestBtn').addEventListener('click', function() {
-  document.getElementById('manifestModal').style.display = "block";
-});
-
-// Закриття модального вікна
-document.getElementById('closeModalButton').addEventListener('click', function() {
-  document.getElementById('manifestModal').style.display = "none";
-});
-
-// Закриття модального вікна при натисканні на фон
-window.onclick = function(event) {
-  if (event.target == document.getElementById('manifestModal')) {
-    document.getElementById('manifestModal').style.display = "none";
-  }
-};
