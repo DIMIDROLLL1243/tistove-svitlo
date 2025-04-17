@@ -4,18 +4,27 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  color: #f0f0f0; /* Білий текст для контрасту */
+  font-family: 'Spectral SC', serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Напівпрозорий фон для тексту */
+h1, p, button {
+  background-color: rgba(255, 255, 255, 0.7); /* Білый фон з прозорістю */
+  padding: 10px;
+  border-radius: 5px;
 }
 
 /* Стиль для заголовка */
 h1 {
-  font-family: 'Cinzel', serif; /* шрифт для заголовка */
+  font-family: 'Cinzel', serif;
   font-size: 48px;
   text-align: center;
   margin-top: 50px;
-  color: #4d2a1f; /* темно-червоний відтінок */
-  letter-spacing: 3px; /* трохи розширені літери */
-  text-transform: uppercase; /* великі літери */
+  color: #4d2a1f;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 /* Стиль для параграфів */
@@ -26,10 +35,6 @@ p {
   padding: 20px;
   max-width: 800px;
   margin: 0 auto;
-  font-family: 'Spectral SC', serif;
-  color: #f0f0f0; /* Білий текст */
-  background-color: rgba(0, 0, 0, 0.5); /* Напівпрозорий чорний фон */
-  border-radius: 10px; /* Краї округлені */
 }
 
 /* Стиль для кнопки */
@@ -46,5 +51,20 @@ button {
 }
 
 button:hover {
-  background-color: #7a4b36; /* більш світлий відтінок при наведенні */
+  background-color: #7a4b36;
+}
+
+/* Адаптивні стилі для менших екранів */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 18px;
+    padding: 15px;
+  }
+  button {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
 }
