@@ -96,7 +96,7 @@ button:hover {
   font-size: 22px;
   font-style: italic;
   text-align: center;
-  color: #2ecc71; /* зелений */
+  color: #e74c3c !important; /* червоний */
   margin-top: 20px;
 
 /* Стиль кнопки для Маніфесту */
