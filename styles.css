@@ -11,6 +11,10 @@ body {
   color: #2e2e2e; /* темно-сірий текст */
   margin: 0;
   padding: 0;
+  background-image: url('https://github.com/DIMIDROLLL1243/tistove-svitlo/raw/main/photo_2025-04-17_14-00-47.jpg');
+  background-size: cover; /* Щоб зображення покривало весь екран */
+  background-position: center center; /* Центруємо зображення */
+  background-repeat: no-repeat; /* Щоб зображення не повторювалося */
 }
 
 /* Стиль для заголовка */
@@ -50,13 +54,6 @@ button {
 
 button:hover {
   background-color: #7a4b36; /* більш світлий відтінок при наведенні */
-  body {
-  background-image: url('https://github.com/DIMIDROLLL1243/tistove-svitlo/raw/main/photo_2025-04-17_14-00-47.jpg');
-  background-size: cover; /* Щоб зображення покривало весь екран */
-  background-position: center center; /* Центруємо зображення */
-  background-repeat: no-repeat; /* Щоб зображення не повторювалося */
-  margin: 0;
-  font-family: 'Arial', sans-serif; /* Встановити шрифт */
 }
 
 }
