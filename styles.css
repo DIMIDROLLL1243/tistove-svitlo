@@ -1,18 +1,20 @@
 /* Загальні стилі */
 body {
   background-image: url('https://raw.githubusercontent.com/DIMIDROLLL1243/tistove-svitlo/main/photo_2025-04-17_14-00-47.jpg');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-size: cover; /* Зображення займає весь екран */
+  background-position: center center; /* Центруємо зображення */
+  background-repeat: no-repeat; /* Запобігаємо повторенню зображення */
   margin: 0;
   font-family: 'Spectral SC', serif;
   padding: 0;
   overflow-x: hidden; /* щоб не було горизонтального скролінгу */
-  min-height: 100vh; /* забезпечує мінімальну висоту сторінки на весь екран */
+  min-height: 100vh; /* Забезпечує мінімальну висоту сторінки на весь екран */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  color: white; /* Білий колір тексту для контрасту */
 }
+
 
 /* Стиль для заголовка */
 h1 {
