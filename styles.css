@@ -4,22 +4,18 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  font-family: 'Spectral SC', serif;
-  margin: 0;
+  font-size: 18px; /* Розмір шрифтів */
+  min-height: 100vh; /* Гарантуємо, що висота сторінки покриває весь екран */
+  overflow-y: auto; /* Додаємо вертикальну прокрутку */
   padding: 0;
-}
-
-/* Напівпрозорий фон для тексту */
-h1, p, button {
-  background-color: rgba(255, 255, 255, 0.7); /* Білый фон з прозорістю */
-  padding: 10px;
-  border-radius: 5px;
+  margin: 0;
+  font-family: 'Spectral SC', serif;
 }
 
 /* Стиль для заголовка */
 h1 {
   font-family: 'Cinzel', serif;
-  font-size: 48px;
+  font-size: 56px;
   text-align: center;
   margin-top: 50px;
   color: #4d2a1f;
@@ -29,42 +25,49 @@ h1 {
 
 /* Стиль для параграфів */
 p {
-  font-size: 24px;
+  font-size: 26px;
   text-align: center;
-  line-height: 1.6;
+  line-height: 1.8;
   padding: 20px;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
+  font-family: 'Spectral SC', serif;
 }
 
 /* Стиль для кнопки */
 button {
   font-family: 'Cinzel', serif;
-  font-size: 18px;
+  font-size: 22px;
   background-color: #4d2a1f;
   color: #fff;
   border: none;
-  padding: 15px 30px;
+  padding: 20px 40px;
   cursor: pointer;
   border-radius: 5px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 button:hover {
   background-color: #7a4b36;
 }
 
-/* Адаптивні стилі для менших екранів */
+/* Медіа-запити для адаптивності */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 36px;
-  }
-  p {
-    font-size: 18px;
-    padding: 15px;
-  }
-  button {
+  body {
     font-size: 16px;
-    padding: 12px 25px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 20px;
+    max-width: 90%;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 15px 30px;
   }
 }
