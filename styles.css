@@ -4,9 +4,9 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  font-size: 18px; /* Розмір шрифтів */
-  min-height: 100vh; /* Гарантуємо, що висота сторінки покриває весь екран */
-  overflow-y: auto; /* Додаємо вертикальну прокрутку */
+  font-size: 20px; /* Збільшення розміру шрифтів для більшого тексту */
+  min-height: 100vh; /* Висота, яка покриває весь екран */
+  overflow-y: scroll; /* Додавання вертикальної прокрутки */
   padding: 0;
   margin: 0;
   font-family: 'Spectral SC', serif;
@@ -15,7 +15,7 @@ body {
 /* Стиль для заголовка */
 h1 {
   font-family: 'Cinzel', serif;
-  font-size: 56px;
+  font-size: 72px; /* Збільшення шрифта для заголовка */
   text-align: center;
   margin-top: 50px;
   color: #4d2a1f;
@@ -25,11 +25,11 @@ h1 {
 
 /* Стиль для параграфів */
 p {
-  font-size: 26px;
+  font-size: 28px; /* Збільшення шрифта для параграфів */
   text-align: center;
   line-height: 1.8;
-  padding: 20px;
-  max-width: 1000px;
+  padding: 30px;
+  max-width: 1200px; /* Збільшення ширини для параграфів */
   margin: 0 auto;
   font-family: 'Spectral SC', serif;
 }
@@ -37,13 +37,13 @@ p {
 /* Стиль для кнопки */
 button {
   font-family: 'Cinzel', serif;
-  font-size: 22px;
+  font-size: 24px; /* Збільшення розміру шрифта на кнопці */
   background-color: #4d2a1f;
   color: #fff;
   border: none;
-  padding: 20px 40px;
+  padding: 25px 50px; /* Збільшення розміру кнопки */
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 8px;
   margin-top: 40px;
 }
 
@@ -51,23 +51,12 @@ button:hover {
   background-color: #7a4b36;
 }
 
-/* Медіа-запити для адаптивності */
-@media (max-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-
-  h1 {
-    font-size: 40px;
-  }
-
-  p {
-    font-size: 20px;
-    max-width: 90%;
-  }
-
-  button {
-    font-size: 18px;
-    padding: 15px 30px;
-  }
+/* Стиль для додаткових елементів */
+.modal-content {
+  font-size: 24px; /* Збільшення шрифтів в модальних вікнах */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
 }
