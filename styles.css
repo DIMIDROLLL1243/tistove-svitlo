@@ -92,14 +92,12 @@ button:hover {
   cursor: pointer;
 }
 
-/* Для генерації цитат */
 #quoteDisplay {
   font-size: 22px;
   font-style: italic;
   text-align: center;
-  color: #000000;
+  color: #2ecc71; /* зелений */
   margin-top: 20px;
-}
 
 /* Стиль кнопки для Маніфесту */
 .download-btn {
